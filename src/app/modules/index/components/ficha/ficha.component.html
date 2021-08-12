@@ -1,0 +1,27 @@
+
+<ng-container *ngIf="item">
+      <div class="profilecard__container">
+        <div class="profilecard__item"><label class="profilecard__toggle-button" for="profilecard--toggle"></label>
+            <div class="profilecard__item-wrapper">
+                <div class="profilecard__front-side">
+                    <div class="profilecard__profile">
+                        <h1 class="profilecard__profile-name">{{item.name}}</h1>
+                        <img class="profilecard__profile-img" [src]="item.image" />
+                    </div>
+                    <div class="profilecard__info">
+                        <ul>
+                            <li><b>Creado:</b> {{item.created | date: 'dd/MM/yyyy' }}</li>
+                            <li><b>Genero: </b>{{item.gender}}</li>
+                            <li><b>Especie: </b>Especie: {{item.species}}</li>
+                            <li><b>Estado: </b>{{item.status}}</li>
+                            <li><b>Tipo: </b>{{item.type}}</li>
+                            <li><b>Origen: </b>{{item.origin.name}}</li>
+                            <li><b>localización: </b>{{item.location.name}}</li>
+                            <li><b>Cantidad de episodios: </b>{{item.episode.length}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
