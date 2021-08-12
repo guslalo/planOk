@@ -167,3 +167,18 @@
     flex: 1 1 100%;
     margin: $profilecard__spacing-small;
   }
+
+  @media screen and (max-width: 720px) { 
+    .profilecard__toggle-button {
+        display: none;
+    }
+    .profilecard__item-wrapper{
+         padding-left: 0;
+    }
+    .profilecard__front-side{
+      padding: 0;
+  }
+  .profilecard__item {
+    margin: 0;
+  }
+}
